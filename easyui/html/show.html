@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>添加一个产品</title>
+	<link rel="stylesheet" type="text/css" href="../css/themes/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../css/themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="../css/demo.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="../js/easyui-lang-zh_CN.js"></script>
+</head>
+<body>
+	<div style="margin:5px 0;"></div>
+	<div align="center" class="easyui-panel" title="新增产品" style="width:100%;max-width:400px;padding:30px 60px;">
+		<form id="pf" method="post">
+			<div style="margin-bottom:20px">
+				<input class="easyui-textbox" name="name" style="width:100%" data-options="label:'产品编号:',required:true">
+			</div>
+			<div style="margin-bottom:20px">
+				<input class="easyui-textbox" name="email" style="width:100%" data-options="label:'产品名称:',required:true">
+			</div>
+			<div style="margin-bottom:20px">
+				<input class="easyui-textbox" name="subject" style="width:100%;height:60px" data-options="label:'产品描述:',multiline:true">
+			</div>
+			<div style="margin-bottom:20px">
+				<input class="easyui-textbox" name="message" style="width:100%;" data-options="label:'产权人:',required:true">
+			</div>
+			<div style="margin-bottom:20px">
+				<select class="easyui-combobox" name="country" label="性别" style="width:100%">
+					<option value="male">男</option>
+					<option value="female">女</option>
+				</select>
+			</div>
+		</form>
+		<div style="text-align:center;padding:5px 0">
+			<a href="javascript:void(0)" class="easyui-linkbutton" onclick="submitForm()" style="width:80px">确定</a>
+			<a href="javascript:void(0)" class="easyui-linkbutton" onclick="clearForm()" style="width:80px">取消</a>
+		</div>
+	</div>
+	<script>
+		function submitForm(){
+			$('#pf').form('submit');
+		}
+		function clearForm(){
+			$('#pf').form('clear');
+		}
+	</script>
+</body>
+</html>

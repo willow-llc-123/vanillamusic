@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/themes/easyui.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/demo.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/themes/icon.css" type="text/css"/>
+        <script type="text/javascript" src="../js/jquery.easyui.min.js" ></script>
+        <script type="text/javascript" src="../js/jquery.min.js" ></script>
+        <script type="text/javascript" src="../js/easyui-lang-zh_CN.js" ></script>
+        <title>用户版首页</title>
+        <style>
+	#bwhite{
+		float: left;
+	}
+	#div_right{
+		color: white;
+		font-family: "微软雅黑";
+		font-size: 2;
+		float: right;
+	}
+        </style>
+    </head>
+    <body style="background-color: #00A0DD">
+	<div id="bwhite"><font color="white" face="elephant" size="5">用户版</font></div>
+	<div id="div_right" align="right">
+			<font size="2">sea，欢迎您！</font><br>
+			<div style="height:8px"></div>
+			<span><a href="<%=path %>/user/goIndex" target="_top">网站首页</a></span>
+			<span>|</span>
+			<span><a href="<%=path %>/user/goTalkPlace" target="_top">支持论坛</a></span>
+			<span>|</span>
+			<span><a href="<%=path %>/user/goGetHelp" target="_top">帮助中心</a></span>
+			<span>|</span>
+			<span><a href="<%=path %>/user/goOut" target="_top">安全退出</a></span>
+		</div>
+    </body>
+</html>
